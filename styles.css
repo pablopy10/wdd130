@@ -29,15 +29,6 @@ aside h2{
     left: 150px;
 }
 
-main{
-    width: 95rem;
-    margin: 2rem;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    padding: 2rem;
-    background-color: #f5f4f7;
-    color: black;
-    text-align: center;
-}
 
 aside img{
     width: 200px;
