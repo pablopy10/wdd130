@@ -174,19 +174,6 @@ footer .social-media img {
     height: 24px;
 }
 
-/* rafting.css */
-
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Header, navigation, and footer styles (same as other pages) */
-
-/* Contact Page Specific Styles */
 #company-info, #employees, #contact-form {
     margin: 20px;
     padding: 20px;
