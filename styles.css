@@ -9,7 +9,134 @@ main{
     margin: 1rem;
 }
 
-aside img{
+aside img{@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    /* Root Variables */
+    :root {
+        --primary-color: #f0f4f8;
+        --secondary-color: #2e3b4e;
+        --accent1-color: #d81b60;
+        --accent2-color: #1976d2;
+        --heading-font: 'Poppins', sans-serif;
+        --paragraph-font: 'Poppins', sans-serif;
+        --nav-background-color: #2e3b4e;
+        --nav-link-color: #ffffff;
+        --nav-hover-link-color: var(--primary-color);
+        --nav-hover-background-color: var(--accent2-color);
+    }
+    
+    /* Global Styles */
+    body {
+        font-family: var(--paragraph-font);
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
+    
+    /* Header and Navigation */
+    header {
+        background-color: var(--nav-background-color);
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header nav {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    header nav a {
+        color: var(--nav-link-color);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        transition: color 0.3s, background-color 0.3s;
+    }
+    
+    header nav a:hover {
+        color: var(--nav-hover-link-color);
+        background-color: var(--nav-hover-background-color);
+        border-radius: 5px;
+    }
+    
+    /* Main Content */
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    main {
+        flex: 2;
+    }
+    
+    aside {
+        flex: 1;
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1, h2 {
+        font-family: var(--heading-font);
+        color: var(--accent2-color);
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    p {
+        margin-bottom: 1rem;
+    }
+    
+    .profile-pic {
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+    
+    .city-img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+    
+    .box ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .box ul li {
+        margin-bottom: 0.5rem;
+    }
+    
+    .box ul li a {
+        color: var(--accent1-color);
+        text-decoration: none;
+    }
+    
+    .box ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: var(--nav-background-color);
+        color: var(--primary-color);
+    }
+    
     width: 250px;
     height: auto;
 }
