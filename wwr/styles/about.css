@@ -55,6 +55,36 @@ header {
     border-radius: 5px;
 }
 
+/* Header and Navigation */
+header {
+    background-color: var(--nav-background-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+}
+
+.nav {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center; /* Center vertically */
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, background-color 0.3s;
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Center vertically */
+}
+
+
 /* Hero Section */
 .hero {
     position: relative;
