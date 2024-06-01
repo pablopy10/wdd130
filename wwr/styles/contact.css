@@ -1,16 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --primary-color: #FFFFFF;
-    --secondary-color: #00171F;
-    --accent1-color: #003459;
-    --accent2-color: #007EA7;
+    --primary-color: #f0f4f8;
+    --secondary-color: #2e3b4e;
+    --accent1-color: #d81b60;
+    --accent2-color: #1976d2;
     --heading-font: 'Poppins', sans-serif;
     --paragraph-font: 'Poppins', sans-serif;
-    --nav-background-color: #000000;
-    --nav-link-color: var(--accent2-color);
+    --nav-background-color: #2e3b4e;
+    --nav-link-color: #ffffff;
     --nav-hover-link-color: var(--primary-color);
     --nav-hover-background-color: var(--accent2-color);
+}
+
+/* Global Styles */
+body {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: var(--nav-background-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+header nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+    border-radius: 5px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
 body {
@@ -22,43 +74,36 @@ body {
     padding: 20px;
 }
 
+/* Header and Navigation */
 header {
-    padding: 20px;
-    background-color: var(--accent1-color);
-    color: var(--primary-color);
-    text-align: center;
-}
-
-.logo {
-    width: 100px;
-    height: auto;
-}
-
-.nav {
+    background-color: var(--nav-background-color);
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav {
-    background-color: var(--nav-background-color);
-    display: flex;
-    gap: 15px;
+.nav img.logo {
+    height: 50px;
 }
 
-nav a {
+.nav nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav nav a {
     color: var(--nav-link-color);
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     transition: color 0.3s, background-color 0.3s;
 }
 
-nav a:hover {
+.nav nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
     border-radius: 5px;
 }
-
 h1, h2, h3, h4 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
@@ -67,9 +112,9 @@ h1, h2, h3, h4 {
 
 h2 {
     font-size: 2rem;
-    color: var(--accent1-color);
+    color: var(--secondary-color);
     margin-bottom: 1rem;
-    border-bottom: 2px solid var(--accent1-color);
+    border-bottom: 2px solid var(--secondary-color);
     padding-bottom: 0.5rem;
 }
 
@@ -81,6 +126,7 @@ p {
 
 section {
     margin-bottom: 2rem;
+   
 }
 
 #company-info {
@@ -94,23 +140,26 @@ section {
     margin-top: 1rem;
 }
 
+
 .employee {
     display: inline-block;
     width: 30%;
     text-align: center;
     margin: 0 1%;
+    margin-top: 30px;
 }
 
 .employee img {
     width: 100%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 figcaption {
     margin-top: 0.5rem;
     font-size: 1rem;
-    color: var(--accent1-color);
+    color: var(--secondary-color);
+    font-weight: 700;
 }
 
 #contact-form form {
